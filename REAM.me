@@ -1,0 +1,14 @@
+Todo task manager
+
+Todo application using HTML, CSS, and JavaScript.  
+
+It allows the user to:
+- add tasks
+- mark tasks as done by clicking on them
+- sort tasks (A-Z)
+
+The app uses: 
+
+An array in JavaScript to store tasks, 
+A render function to update the task list every time a change occurs.
+I also used inline CSS to show completed tasks with a line-through.

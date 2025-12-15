@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+    <body>
+        <main>
+            <h1>My Tasks</h1>
+            
+            <!-- add task -->
+            <div class="add-task">
+            <input type="text", id="task-input", placeholder="Γράψε ένα task..."/>
+            <button id="add-btn">Add</button>
+            </div>
+
+            <!-- sort button -->
+            <div class="sort-task">
+            <button id="sort-btn">Sort A-Z</button>
+            </div>
+
+            <!-- task list -->
+            <ul id="task-list">
+            <!-- tasks will be added here from js -->
+            </ul>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

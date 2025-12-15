@@ -1,0 +1,73 @@
+/* body: κεντράρισμα οριζόντια */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* main container */
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+
+  /* σταθερό ύψος, overflow για λίστα */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* input και κουμπιά */
+.add-task input {
+  padding: 6px 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task button,
+.sort-task button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10px; 
+  cursor: pointer;
+}
+
+.add-task button:hover,
+.sort-task button:hover {
+  background-color: #45a049;
+}
+
+/* λίστα tasks */
+ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+
+  /* κάνει τη λίστα να κυλάει αν γεμίσει */
+  overflow-y: auto;
+  flex-grow: 1; /* παίρνει τον διαθέσιμο χώρο */
+}
+
+ul#task-list li {
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#task-list li:hover {
+  background: #e0e0e0;
+}
